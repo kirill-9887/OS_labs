@@ -1,0 +1,19 @@
+{
+    "name": "OS_Lab_Container",
+    "dockerFile": "Dockerfile",
+    "context": "..",
+    "appPort": [],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "vscode.cpptools-extension-pack",
+                "ms-vscode.cmake-tools"
+            ],
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "remote.autoUpdate": false
+            }
+        }
+    }
+}
