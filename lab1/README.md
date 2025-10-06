@@ -1,17 +1,13 @@
+# Variant: 21
+
 # Build and run
-    ```bash
-    mkdir ./build
-    cd ./build
-    ```
+```bash
+mkdir ./build
+cd ./build
+cmake ..
+cmake --build .
+```
 
-    ```bash
-    cmake ..
-    ```
-
-    ```bash
-    cmake --build .
-    ```
-
-    ```bash
-    ./client
-    ```
+```bash
+./client
+```
