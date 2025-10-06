@@ -4,8 +4,6 @@
     cd ./build
     cmake ..
     cmake --build .
-    ```
 
     ```bash
     ./client
-    ```
