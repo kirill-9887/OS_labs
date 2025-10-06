@@ -55,4 +55,3 @@ dkms.conf
 *.dwo
 
 lab1/build/*
-lab1/doc/*
