@@ -198,6 +198,11 @@ int main(int argc, char **argv) {
 			write(pipeClientToServer2[1], buf, bytes_read);
 			break;
 		}
+		if (bytes_read == USER_INPUT_BUFFERSIZE && buf[bytes_read - 1] != '\n') {
+			char msg[] = "error: received line too long\n";
+			write(STDERR_FILENO, msg, sizeof(msg));
+			exit(EXIT_FAILURE);
+		}
 		ssize_t bytes_written;
 		if (oddLine) {
 			bytes_written = write(pipeClientToServer1[1], buf, bytes_read);

@@ -21,12 +21,6 @@ int main(int argc, char **argv) {
 		if (buf[0] == '\n') {
 			break;
 		}
-		if (bytes_read == USER_INPUT_BUFFERSIZE && buf[bytes_read - 1] != '\n') {
-			char msg[MSG_BUFFERSIZE];
-			const int32_t msg_size = snprintf(msg, MSG_BUFFERSIZE, "error: received line too long (PID: %d)\n", pid);
-			write(STDERR_FILENO, msg, msg_size);
-			exit(EXIT_FAILURE);
-		}
 		for (ssize_t i = 0, j = bytes_read - 2; i < j; ++i, --j) {
 			char tmp = buf[i];
 			buf[i] = buf[j];
