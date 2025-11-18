@@ -2,6 +2,7 @@
 
 # Build and run
 ```bash
+cd ./lab1
 mkdir ./build
 cd ./build
 cmake ..
