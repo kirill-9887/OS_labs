@@ -1,0 +1,383 @@
+4409  execve("./client", ["./client"], 0x7ffeb80a6c38 /* 27 vars */) = 0
+4409  brk(NULL)                         = 0x18036000
+4409  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73029f25d000
+4409  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+4409  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+4409  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=33091, ...}, AT_EMPTY_PATH) = 0
+4409  mmap(NULL, 33091, PROT_READ, MAP_PRIVATE, 3, 0) = 0x73029f254000
+4409  close(3)                          = 0
+4409  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+4409  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20t\2\0\0\0\0\0"..., 832) = 832
+4409  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+4409  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1926232, ...}, AT_EMPTY_PATH) = 0
+4409  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+4409  mmap(NULL, 1974096, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x73029f072000
+4409  mmap(0x73029f098000, 1400832, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x73029f098000
+4409  mmap(0x73029f1ee000, 339968, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17c000) = 0x73029f1ee000
+4409  mmap(0x73029f241000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1cf000) = 0x73029f241000
+4409  mmap(0x73029f247000, 53072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x73029f247000
+4409  close(3)                          = 0
+4409  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73029f06f000
+4409  arch_prctl(ARCH_SET_FS, 0x73029f06f740) = 0
+4409  set_tid_address(0x73029f06fa10)   = 4409
+4409  set_robust_list(0x73029f06fa20, 24) = 0
+4409  rseq(0x73029f070060, 0x20, 0, 0x53053053) = 0
+4409  mprotect(0x73029f241000, 16384, PROT_READ) = 0
+4409  mprotect(0x404000, 4096, PROT_READ) = 0
+4409  mprotect(0x73029f290000, 8192, PROT_READ) = 0
+4409  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+4409  munmap(0x73029f254000, 33091)     = 0
+4409  readlink("/proc/self/exe", "/workspaces/OS_labs/lab3/build/c"..., 1023) = 37
+4409  write(1, "Enter first filename > \0", 24) = 24
+4409  read(0, "../tests/f1.txt\n", 256) = 16
+4409  write(1, "Enter second filename > \0", 25) = 25
+4409  read(0, "../tests/f2.txt\n", 256) = 16
+4409  openat(AT_FDCWD, "/workspaces/OS_labs/lab3/build/../tests/f1.txt", O_WRONLY|O_CREAT|O_TRUNC, 0600) = 3
+4409  openat(AT_FDCWD, "/workspaces/OS_labs/lab3/build/../tests/f2.txt", O_WRONLY|O_CREAT|O_TRUNC, 0600) = 4
+4409  rt_sigaction(SIGINT, {sa_handler=0x4017c4, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x73029f0ae050}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4409  openat(AT_FDCWD, "/dev/shm/shm_1763446038_1983967848", O_RDWR|O_CREAT|O_TRUNC|O_NOFOLLOW|O_CLOEXEC, 0600) = 5
+4409  ftruncate(5, 4096)                = 0
+4409  mmap(NULL, 4096, PROT_WRITE, MAP_SHARED, 5, 0) = 0x73029f25c000
+4409  openat(AT_FDCWD, "/dev/shm/sem.sem_client_to_server_1_1763446038_807639635", O_RDWR|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+4409  getrandom("\x3f\x73\x01\x1d\x1a\x10\x96\xbe", 8, GRND_NONBLOCK) = 8
+4409  newfstatat(AT_FDCWD, "/dev/shm/sem.Xh93co", 0x7ffc6943c440, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+4409  openat(AT_FDCWD, "/dev/shm/sem.Xh93co", O_RDWR|O_CREAT|O_EXCL, 0600) = 6
+4409  write(6, "\0\0\0\0\0\0\0\0\200\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 32) = 32
+4409  mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 6, 0) = 0x73029f25b000
+4409  link("/dev/shm/sem.Xh93co", "/dev/shm/sem.sem_client_to_server_1_1763446038_807639635") = 0
+4409  newfstatat(6, "", {st_mode=S_IFREG|0600, st_size=32, ...}, AT_EMPTY_PATH) = 0
+4409  getrandom("\xe9\xf7\x1c\xf9\x40\xcf\xc2\x06", 8, GRND_NONBLOCK) = 8
+4409  brk(NULL)                         = 0x18036000
+4409  brk(0x18057000)                   = 0x18057000
+4409  unlink("/dev/shm/sem.Xh93co")     = 0
+4409  close(6)                          = 0
+4409  openat(AT_FDCWD, "/dev/shm/sem.sem_client_to_server_2_1763446038_1802162044", O_RDWR|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+4409  getrandom("\x09\xd3\xdb\x0a\xb8\x74\x55\x6b", 8, GRND_NONBLOCK) = 8
+4409  newfstatat(AT_FDCWD, "/dev/shm/sem.l1oGJM", 0x7ffc6943c440, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+4409  openat(AT_FDCWD, "/dev/shm/sem.l1oGJM", O_RDWR|O_CREAT|O_EXCL, 0600) = 6
+4409  write(6, "\0\0\0\0\0\0\0\0\200\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 32) = 32
+4409  mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 6, 0) = 0x73029f25a000
+4409  link("/dev/shm/sem.l1oGJM", "/dev/shm/sem.sem_client_to_server_2_1763446038_1802162044") = 0
+4409  newfstatat(6, "", {st_mode=S_IFREG|0600, st_size=32, ...}, AT_EMPTY_PATH) = 0
+4409  unlink("/dev/shm/sem.l1oGJM")     = 0
+4409  close(6)                          = 0
+4409  openat(AT_FDCWD, "/dev/shm/sem.sem_server_to_client_1763446038_54883658", O_RDWR|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+4409  getrandom("\x82\x93\x6f\xa1\x2b\x06\x76\xce", 8, GRND_NONBLOCK) = 8
+4409  newfstatat(AT_FDCWD, "/dev/shm/sem.6Q5vgY", 0x7ffc6943c440, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+4409  openat(AT_FDCWD, "/dev/shm/sem.6Q5vgY", O_RDWR|O_CREAT|O_EXCL, 0600) = 6
+4409  write(6, "\0\0\0\0\0\0\0\0\200\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 32) = 32
+4409  mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 6, 0) = 0x73029f259000
+4409  link("/dev/shm/sem.6Q5vgY", "/dev/shm/sem.sem_server_to_client_1763446038_54883658") = 0
+4409  newfstatat(6, "", {st_mode=S_IFREG|0600, st_size=32, ...}, AT_EMPTY_PATH) = 0
+4409  unlink("/dev/shm/sem.6Q5vgY")     = 0
+4409  close(6)                          = 0
+4409  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x73029f06fa10) = 4468
+4468  set_robust_list(0x73029f06fa20, 24 <unfinished ...>
+4409  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+4468  <... set_robust_list resumed>)    = 0
+4409  <... clone resumed>, child_tidptr=0x73029f06fa10) = 4469
+4469  set_robust_list(0x73029f06fa20, 24 <unfinished ...>
+4468  getpid( <unfinished ...>
+4409  getpid( <unfinished ...>
+4469  <... set_robust_list resumed>)    = 0
+4409  <... getpid resumed>)             = 4409
+4468  <... getpid resumed>)             = 4468
+4409  write(1, "PID 4409: I'm a parent, my child"..., 58 <unfinished ...>
+4469  getpid( <unfinished ...>
+4409  <... write resumed>)              = 58
+4468  write(1, "PID 4468: I'm a server_1\n", 25 <unfinished ...>
+4409  close(3 <unfinished ...>
+4469  <... getpid resumed>)             = 4469
+4409  <... close resumed>)              = 0
+4468  <... write resumed>)              = 25
+4409  close(4 <unfinished ...>
+4469  write(1, "PID 4469: I'm a server_2\n", 25 <unfinished ...>
+4409  <... close resumed>)              = 0
+4468  dup2(3, 1 <unfinished ...>
+4409  read(0,  <unfinished ...>
+4469  <... write resumed>)              = 25
+4468  <... dup2 resumed>)               = 1
+4469  dup2(4, 1 <unfinished ...>
+4468  close(3 <unfinished ...>
+4469  <... dup2 resumed>)               = 1
+4468  <... close resumed>)              = 0
+4469  close(4 <unfinished ...>
+4468  close(4 <unfinished ...>
+4469  <... close resumed>)              = 0
+4468  <... close resumed>)              = 0
+4469  close(3 <unfinished ...>
+4468  execve("/workspaces/OS_labs/lab3/build/server", ["server", "shm_1763446038_1983967848", "sem_client_to_server_1_176344603"..., "sem_server_to_client_1763446038_"...], 0x7ffc6943f0c8 /* 27 vars */ <unfinished ...>
+4469  <... close resumed>)              = 0
+4469  execve("/workspaces/OS_labs/lab3/build/server", ["server", "shm_1763446038_1983967848", "sem_client_to_server_2_176344603"..., "sem_server_to_client_1763446038_"...], 0x7ffc6943f0c8 /* 27 vars */) = 0
+4468  <... execve resumed>)             = 0
+4469  brk(NULL <unfinished ...>
+4468  brk(NULL <unfinished ...>
+4469  <... brk resumed>)                = 0x37264000
+4468  <... brk resumed>)                = 0x1c277000
+4469  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+4468  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+4469  <... mmap resumed>)               = 0x7e98ea6b0000
+4468  <... mmap resumed>)               = 0x74b3bad7f000
+4469  access("/etc/ld.so.preload", R_OK <unfinished ...>
+4468  access("/etc/ld.so.preload", R_OK <unfinished ...>
+4469  <... access resumed>)             = -1 ENOENT (No such file or directory)
+4468  <... access resumed>)             = -1 ENOENT (No such file or directory)
+4469  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+4468  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+4469  <... openat resumed>)             = 3
+4468  <... openat resumed>)             = 3
+4469  newfstatat(3, "",  <unfinished ...>
+4468  newfstatat(3, "",  <unfinished ...>
+4469  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=33091, ...}, AT_EMPTY_PATH) = 0
+4468  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=33091, ...}, AT_EMPTY_PATH) = 0
+4469  mmap(NULL, 33091, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+4468  mmap(NULL, 33091, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+4469  <... mmap resumed>)               = 0x7e98ea6a7000
+4468  <... mmap resumed>)               = 0x74b3bad76000
+4469  close(3 <unfinished ...>
+4468  close(3 <unfinished ...>
+4469  <... close resumed>)              = 0
+4468  <... close resumed>)              = 0
+4469  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+4468  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+4469  <... openat resumed>)             = 3
+4468  <... openat resumed>)             = 3
+4469  read(3,  <unfinished ...>
+4468  read(3,  <unfinished ...>
+4469  <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20t\2\0\0\0\0\0"..., 832) = 832
+4468  <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20t\2\0\0\0\0\0"..., 832) = 832
+4469  pread64(3,  <unfinished ...>
+4468  pread64(3,  <unfinished ...>
+4469  <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+4468  <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+4469  newfstatat(3, "",  <unfinished ...>
+4468  newfstatat(3, "",  <unfinished ...>
+4469  <... newfstatat resumed>{st_mode=S_IFREG|0755, st_size=1926232, ...}, AT_EMPTY_PATH) = 0
+4468  <... newfstatat resumed>{st_mode=S_IFREG|0755, st_size=1926232, ...}, AT_EMPTY_PATH) = 0
+4469  pread64(3,  <unfinished ...>
+4468  pread64(3,  <unfinished ...>
+4469  <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+4468  <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+4469  mmap(NULL, 1974096, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+4468  mmap(NULL, 1974096, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+4469  <... mmap resumed>)               = 0x7e98ea4c5000
+4468  <... mmap resumed>)               = 0x74b3bab94000
+4469  mmap(0x7e98ea4eb000, 1400832, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000 <unfinished ...>
+4468  mmap(0x74b3babba000, 1400832, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000 <unfinished ...>
+4469  <... mmap resumed>)               = 0x7e98ea4eb000
+4468  <... mmap resumed>)               = 0x74b3babba000
+4469  mmap(0x7e98ea641000, 339968, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17c000 <unfinished ...>
+4468  mmap(0x74b3bad10000, 339968, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17c000 <unfinished ...>
+4469  <... mmap resumed>)               = 0x7e98ea641000
+4468  <... mmap resumed>)               = 0x74b3bad10000
+4469  mmap(0x7e98ea694000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1cf000 <unfinished ...>
+4468  mmap(0x74b3bad63000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1cf000 <unfinished ...>
+4469  <... mmap resumed>)               = 0x7e98ea694000
+4468  <... mmap resumed>)               = 0x74b3bad63000
+4469  mmap(0x7e98ea69a000, 53072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+4468  mmap(0x74b3bad69000, 53072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+4469  <... mmap resumed>)               = 0x7e98ea69a000
+4468  <... mmap resumed>)               = 0x74b3bad69000
+4469  close(3 <unfinished ...>
+4468  close(3 <unfinished ...>
+4469  <... close resumed>)              = 0
+4468  <... close resumed>)              = 0
+4469  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+4468  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+4469  <... mmap resumed>)               = 0x7e98ea4c2000
+4468  <... mmap resumed>)               = 0x74b3bab91000
+4469  arch_prctl(ARCH_SET_FS, 0x7e98ea4c2740 <unfinished ...>
+4468  arch_prctl(ARCH_SET_FS, 0x74b3bab91740 <unfinished ...>
+4469  <... arch_prctl resumed>)         = 0
+4468  <... arch_prctl resumed>)         = 0
+4469  set_tid_address(0x7e98ea4c2a10 <unfinished ...>
+4468  set_tid_address(0x74b3bab91a10 <unfinished ...>
+4469  <... set_tid_address resumed>)    = 4469
+4468  <... set_tid_address resumed>)    = 4468
+4469  set_robust_list(0x7e98ea4c2a20, 24 <unfinished ...>
+4468  set_robust_list(0x74b3bab91a20, 24 <unfinished ...>
+4469  <... set_robust_list resumed>)    = 0
+4468  <... set_robust_list resumed>)    = 0
+4469  rseq(0x7e98ea4c3060, 0x20, 0, 0x53053053 <unfinished ...>
+4468  rseq(0x74b3bab92060, 0x20, 0, 0x53053053 <unfinished ...>
+4469  <... rseq resumed>)               = 0
+4468  <... rseq resumed>)               = 0
+4469  mprotect(0x7e98ea694000, 16384, PROT_READ <unfinished ...>
+4468  mprotect(0x74b3bad63000, 16384, PROT_READ <unfinished ...>
+4469  <... mprotect resumed>)           = 0
+4468  <... mprotect resumed>)           = 0
+4469  mprotect(0x403000, 4096, PROT_READ <unfinished ...>
+4468  mprotect(0x403000, 4096, PROT_READ <unfinished ...>
+4469  <... mprotect resumed>)           = 0
+4468  <... mprotect resumed>)           = 0
+4469  mprotect(0x7e98ea6e3000, 8192, PROT_READ <unfinished ...>
+4468  mprotect(0x74b3badb2000, 8192, PROT_READ <unfinished ...>
+4469  <... mprotect resumed>)           = 0
+4468  <... mprotect resumed>)           = 0
+4469  prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+4468  prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+4469  <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+4468  <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+4469  munmap(0x7e98ea6a7000, 33091 <unfinished ...>
+4468  munmap(0x74b3bad76000, 33091 <unfinished ...>
+4469  <... munmap resumed>)             = 0
+4468  <... munmap resumed>)             = 0
+4469  getpid( <unfinished ...>
+4468  getpid( <unfinished ...>
+4469  <... getpid resumed>)             = 4469
+4468  <... getpid resumed>)             = 4468
+4469  rt_sigaction(SIGINT, {sa_handler=0x40144f, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7e98ea501050},  <unfinished ...>
+4468  rt_sigaction(SIGINT, {sa_handler=0x40144f, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x74b3babd0050},  <unfinished ...>
+4469  <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4468  <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4469  openat(AT_FDCWD, "/dev/shm/shm_1763446038_1983967848", O_RDWR|O_NOFOLLOW|O_CLOEXEC <unfinished ...>
+4468  openat(AT_FDCWD, "/dev/shm/shm_1763446038_1983967848", O_RDWR|O_NOFOLLOW|O_CLOEXEC <unfinished ...>
+4469  <... openat resumed>)             = 3
+4468  <... openat resumed>)             = 3
+4469  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0 <unfinished ...>
+4468  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0 <unfinished ...>
+4469  <... mmap resumed>)               = 0x7e98ea6af000
+4468  <... mmap resumed>)               = 0x74b3bad7e000
+4469  openat(AT_FDCWD, "/dev/shm/sem.sem_client_to_server_2_1763446038_1802162044", O_RDWR|O_NOFOLLOW <unfinished ...>
+4468  openat(AT_FDCWD, "/dev/shm/sem.sem_client_to_server_1_1763446038_807639635", O_RDWR|O_NOFOLLOW <unfinished ...>
+4469  <... openat resumed>)             = 4
+4468  <... openat resumed>)             = 4
+4469  newfstatat(4, "",  <unfinished ...>
+4468  newfstatat(4, "",  <unfinished ...>
+4469  <... newfstatat resumed>{st_mode=S_IFREG|0600, st_size=32, ...}, AT_EMPTY_PATH) = 0
+4468  <... newfstatat resumed>{st_mode=S_IFREG|0600, st_size=32, ...}, AT_EMPTY_PATH) = 0
+4469  getrandom( <unfinished ...>
+4468  getrandom( <unfinished ...>
+4469  <... getrandom resumed>"\xb7\xe6\x40\xc0\x32\xe4\x20\x73", 8, GRND_NONBLOCK) = 8
+4468  <... getrandom resumed>"\xee\x4a\xf2\x31\x81\x91\xf8\xdf", 8, GRND_NONBLOCK) = 8
+4469  brk(NULL <unfinished ...>
+4468  brk(NULL <unfinished ...>
+4469  <... brk resumed>)                = 0x37264000
+4468  <... brk resumed>)                = 0x1c277000
+4469  brk(0x37285000 <unfinished ...>
+4468  brk(0x1c298000 <unfinished ...>
+4469  <... brk resumed>)                = 0x37285000
+4468  <... brk resumed>)                = 0x1c298000
+4469  mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 4, 0 <unfinished ...>
+4468  mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 4, 0 <unfinished ...>
+4469  <... mmap resumed>)               = 0x7e98ea6ae000
+4468  <... mmap resumed>)               = 0x74b3bad7d000
+4469  close(4 <unfinished ...>
+4468  close(4 <unfinished ...>
+4469  <... close resumed>)              = 0
+4468  <... close resumed>)              = 0
+4469  openat(AT_FDCWD, "/dev/shm/sem.sem_server_to_client_1763446038_54883658", O_RDWR|O_NOFOLLOW <unfinished ...>
+4468  openat(AT_FDCWD, "/dev/shm/sem.sem_server_to_client_1763446038_54883658", O_RDWR|O_NOFOLLOW <unfinished ...>
+4469  <... openat resumed>)             = 4
+4468  <... openat resumed>)             = 4
+4469  newfstatat(4, "",  <unfinished ...>
+4468  newfstatat(4, "",  <unfinished ...>
+4469  <... newfstatat resumed>{st_mode=S_IFREG|0600, st_size=32, ...}, AT_EMPTY_PATH) = 0
+4468  <... newfstatat resumed>{st_mode=S_IFREG|0600, st_size=32, ...}, AT_EMPTY_PATH) = 0
+4469  mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 4, 0 <unfinished ...>
+4468  mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 4, 0 <unfinished ...>
+4469  <... mmap resumed>)               = 0x7e98ea6ad000
+4468  <... mmap resumed>)               = 0x74b3bad7c000
+4469  close(4 <unfinished ...>
+4468  close(4 <unfinished ...>
+4469  <... close resumed>)              = 0
+4468  <... close resumed>)              = 0
+4469  futex(0x7e98ea6ae000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+4468  futex(0x74b3bad7d000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+4409  <... read resumed>"string1\n", 4088) = 8
+4409  futex(0x73029f25b000, FUTEX_WAKE, 1) = 1
+4468  <... futex resumed>)              = 0
+4409  futex(0x73029f259000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+4468  write(1, "1gnirts\n", 8)          = 8
+4468  futex(0x74b3bad7c000, FUTEX_WAKE, 1 <unfinished ...>
+4409  <... futex resumed>)              = 0
+4468  <... futex resumed>)              = 1
+4409  read(0,  <unfinished ...>
+4468  futex(0x74b3bad7d000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+4409  <... read resumed>"string2\n", 4088) = 8
+4409  futex(0x73029f25a000, FUTEX_WAKE, 1) = 1
+4469  <... futex resumed>)              = 0
+4409  futex(0x73029f259000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+4469  write(1, "2gnirts\n", 8)          = 8
+4469  futex(0x7e98ea6ad000, FUTEX_WAKE, 1 <unfinished ...>
+4409  <... futex resumed>)              = 0
+4469  <... futex resumed>)              = 1
+4409  read(0,  <unfinished ...>
+4469  futex(0x7e98ea6ae000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+4409  <... read resumed>"string with spaces\n", 4088) = 19
+4409  futex(0x73029f25b000, FUTEX_WAKE, 1) = 1
+4468  <... futex resumed>)              = 0
+4409  futex(0x73029f259000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+4468  write(1, "secaps htiw gnirts\n", 19) = 19
+4468  futex(0x74b3bad7c000, FUTEX_WAKE, 1 <unfinished ...>
+4409  <... futex resumed>)              = 0
+4468  <... futex resumed>)              = 1
+4409  read(0,  <unfinished ...>
+4468  futex(0x74b3bad7d000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+4409  <... read resumed>"qwerty\n", 4088) = 7
+4409  futex(0x73029f25a000, FUTEX_WAKE, 1) = 1
+4469  <... futex resumed>)              = 0
+4409  futex(0x73029f259000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+4469  write(1, "ytrewq\n", 7)           = 7
+4469  futex(0x7e98ea6ad000, FUTEX_WAKE, 1 <unfinished ...>
+4409  <... futex resumed>)              = 0
+4469  <... futex resumed>)              = 1
+4409  read(0,  <unfinished ...>
+4469  futex(0x7e98ea6ae000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+4409  <... read resumed>"123456789\n", 4088) = 10
+4409  futex(0x73029f25b000, FUTEX_WAKE, 1) = 1
+4468  <... futex resumed>)              = 0
+4409  futex(0x73029f259000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+4468  write(1, "987654321\n", 10)       = 10
+4468  futex(0x74b3bad7c000, FUTEX_WAKE, 1 <unfinished ...>
+4409  <... futex resumed>)              = 0
+4468  <... futex resumed>)              = 1
+4409  read(0,  <unfinished ...>
+4468  futex(0x74b3bad7d000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+4409  <... read resumed>"\n", 4088)     = 1
+4409  futex(0x73029f25b000, FUTEX_WAKE, 1) = 1
+4468  <... futex resumed>)              = 0
+4409  futex(0x73029f25a000, FUTEX_WAKE, 1 <unfinished ...>
+4468  write(2, "Child PID 4468 exit successfully"..., 33 <unfinished ...>
+4409  <... futex resumed>)              = 1
+4469  <... futex resumed>)              = 0
+4409  wait4(4468,  <unfinished ...>
+4468  <... write resumed>)              = 33
+4469  write(2, "Child PID 4469 exit successfully"..., 33 <unfinished ...>
+4468  munmap(0x74b3bad7c000, 32 <unfinished ...>
+4469  <... write resumed>)              = 33
+4468  <... munmap resumed>)             = 0
+4469  munmap(0x7e98ea6ad000, 32 <unfinished ...>
+4468  munmap(0x74b3bad7d000, 32 <unfinished ...>
+4469  <... munmap resumed>)             = 0
+4468  <... munmap resumed>)             = 0
+4469  munmap(0x7e98ea6ae000, 32 <unfinished ...>
+4468  munmap(0x74b3bad7e000, 4096 <unfinished ...>
+4469  <... munmap resumed>)             = 0
+4468  <... munmap resumed>)             = 0
+4469  munmap(0x7e98ea6af000, 4096 <unfinished ...>
+4468  close(3 <unfinished ...>
+4469  <... munmap resumed>)             = 0
+4468  <... close resumed>)              = 0
+4469  close(3 <unfinished ...>
+4468  exit_group(0 <unfinished ...>
+4469  <... close resumed>)              = 0
+4468  <... exit_group resumed>)         = ?
+4469  exit_group(0)                     = ?
+4468  +++ exited with 0 +++
+4409  <... wait4 resumed>NULL, 0, NULL) = 4468
+4469  +++ exited with 0 +++
+4409  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=4468, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+4409  wait4(4469, NULL, 0, NULL)        = 4469
+4409  write(1, "Parent exit successfully\n\0", 26) = 26
+4409  munmap(0x73029f25b000, 32)        = 0
+4409  unlink("/dev/shm/sem.sem_client_to_server_1_1763446038_807639635") = 0
+4409  munmap(0x73029f25a000, 32)        = 0
+4409  unlink("/dev/shm/sem.sem_client_to_server_2_1763446038_1802162044") = 0
+4409  munmap(0x73029f259000, 32)        = 0
+4409  unlink("/dev/shm/sem.sem_server_to_client_1763446038_54883658") = 0
+4409  munmap(0x73029f25c000, 4096)      = 0
+4409  close(5)                          = 0
+4409  unlink("/dev/shm/shm_1763446038_1983967848") = 0
+4409  exit_group(0)                     = ?
+4409  +++ exited with 0 +++
