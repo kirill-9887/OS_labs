@@ -2,7 +2,8 @@
     "files.associations": {
         "stdio.h": "c",
         "config.h": "c",
-        "stdbool.h": "c"
+        "stdbool.h": "c",
+        "library.h": "c"
     },
     "cmake.sourceDirectory": "/workspaces/OS_labs/lab1"
 }
